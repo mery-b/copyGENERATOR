@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Monoton');
+@import url('https://fonts.googleapis.com/css?family=BenchNine');
+
+body  {
+	background-image: url("pattern_pink.png");
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: 'BenchNine', sans-serif !important;
+	color: #4c4c4e;
+}
+
+.jumbotron  {
+	height: 100vh;
+	position: relative;
+	background-color: transparent !important; 
+}
+
+.jumbotron h1,
+.jumbotron h2  {
+	font-family: 'Monoton', cursive;
+	color: white !important;
+} 
+
+.jumbotron h2  {
+	margin-top: 5px;
+}
+
+.dedication  {
+	padding: 50px;
+}
+
+.jumbotron p  {
+	width: 50%;
+	margin: 0 auto;
+	font-family: 'BenchNine', sans-serif;
+	font-size: 28px !important;
+	color: #4c4c4e;
+}
+
+.btn.btn-lg.intro {
+	font-size: 36px;
+	padding: 20px;
+	background: transparent;
+	border: 1px solid #fff;
+	color: #fff;
+	transition: all 0.3s;
+}
+
+.btn.btn-lg.intro:hover {
+	background: #fff;
+	color: #fa9cb1;
+}
+
+button.btn-lg  {
+	border-radius: 45px;
+	background-color: #fff;
+	outline: transparent;
+	transition: all 0.5s;
+}
+
+button.btn-lg span  {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+button.btn-lg span:after  {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+button.btn-lg:hover span  {
+  padding-right: 25px;
+}
+
+button.btn-lg:hover span:after  {
+  opacity: 1;
+  right: 0;
+}
+
+button.btn-lg:hover,
+button.btn-lg:visited,
+button.btn-lg:active,
+button.btn-lg:focus  {
+	outline: transparent !important;	
+} 
+
+#copy  {
+	font-size: 30px;
+	text-transform: uppercase;
+	color: #4c4c4e;
+}
+
+.modal-content .modal-header {
+	background-image: url("pattern_pink.png");
+	background-position: 30% 20%;
+	color: #fff;
+}
+
+.modal-content .modal-footer {
+	border-top: none;
+}
+
+.modal-footer .pink-border {
+	border: 2px solid #fa9cb1;
+	background-color: .1s ease-in;
+}
+
+.modal-footer .pink-border:hover {
+	background-color: #fa9cb1;
+}
+
+@media only screen and (max-width: 768px) {
+	.btn.btn-lg.intro {
+		transition: none;
+	}
+	.btn.btn-lg.intro:hover {
+	background: transparent;
+	color: #fff;
+	}
+}
